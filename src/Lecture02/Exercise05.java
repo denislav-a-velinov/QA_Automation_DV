@@ -37,7 +37,4 @@ public class Exercise05 {
         String finalSolutionArea = "The area of your triangle is: ";
         System.out.println(finalSolutionArea + totalArea);
     }
-
-
-
 }
