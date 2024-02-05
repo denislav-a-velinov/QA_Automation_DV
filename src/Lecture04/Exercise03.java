@@ -15,15 +15,17 @@ public class Exercise03 {
         System.out.println("Your total is: " + totalPrice + "$");
 
         double discount = 0;
+
         if (productQuantity >= 100 && productQuantity <= 120) {
+            discount = 0.15 * totalPrice;
             System.out.println("Your discount rate is 15%");
         } else if (productQuantity > 120) {
+            discount = 0.20 * totalPrice;
             System.out.println("Your discount rate is 20%");
         } else {
             System.out.println("Your discount rate is 0%");
-        } if (productQuantity >= 100 && productQuantity <= 120) {
-            discount = 0.15 * totalPrice;
-        } else if (productQuantity > 120) discount = 0.20 * totalPrice;
+        }
+
         double revenueTotal = totalPrice - discount;
 
         System.out.println("The revenue from the sale is: " + revenueTotal + "$");
